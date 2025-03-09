@@ -1,10 +1,12 @@
 from rembg import remove
 from PIL import Image
 
-print("Hello World")
+print("Processing Image...")
 
-input = Image.open("image.jpg")
+input = Image.open("image.png")
 
 output = remove(input)
 
-output.save('out.png')
+output.save('out_image.png')
+
+print("Done!")
